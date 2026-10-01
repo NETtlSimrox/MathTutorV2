@@ -9,16 +9,14 @@ the program's intro, gets the user's name asks a simple question,
 and then displays an end of program message.
 *********************************************************************
 New Features:
-- cstdlib
-- ctime
--
--
--
--
--
+- <iostream> : Used for standard input/output stream (cin, cout)
+- <string>   : Used to store text variables (username)
+- <cstdlib>  : Used for random number generation (rand, srand)
+- <ctime>    : Used to seed the random number generator (time)
 *****************************************************************************/
 
 #include <iostream>
+#include <string>
 #include <cstdlib>
 #include <ctime>
 using namespace std;
@@ -61,7 +59,7 @@ int main() {
     cout << "  *It's all fun and games until someone divides by zero." << endl;
     cout << "**********************************************************" << endl;
 
-    cout << "What is your name?";
+    cout << "What is your name? ";
     getline(cin, username);
 
     l_num = rand() % 10 + 1;
@@ -80,7 +78,6 @@ int main() {
                 l_num = r_num;
                 r_num = temp;
             }
-
             correctAnswer = l_num - r_num;
             mathSymbol = '-';
             break;
@@ -91,24 +88,28 @@ int main() {
             break;
 
         case 4:
-            correctAnswer = l_num / r_num;
+         
+            correctAnswer = l_num;
+            l_num *= r_num;
             mathSymbol = '/';
             break;
 
         default:
-            errorCode = -1;
-            cout << "Error: Invalid math type." << endl;
-            break;
+
+            cout << "Invalid question type: " << mathType << endl;
+            cout << "Program ended with an error -1" << endl;
+            cout << "Please report this error to Debbie Johnson." << endl;
+            return -1;
     }
 
-    cout << username << ", what is " << l_num << mathSymbol << r_num << " =";
+    cout << username << ", what is " << l_num << " " << mathSymbol << " " << r_num << " = ";
     cin >> userAnswer;
 
     if (userAnswer == correctAnswer) {
         cout << "Correct! Great job, " << username << "!" << endl;
     } else {
         cout << "Sorry, that's incorrect. The correct answer is "
-                << correctAnswer << "." << endl;
+             << correctAnswer << "." << endl;
     }
 
     cout << "End of the program." << endl << endl;
