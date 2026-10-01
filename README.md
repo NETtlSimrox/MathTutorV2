@@ -2,6 +2,7 @@
 
 <b>Table of Contents</b>
 - [Summary](#summary)
+- [Program Flowchart](#program-flowchart)
 - [Maintainers](#maintainers)
 - [New Concepts Used](#new-concepts-used)
 - [Console Output Examples](#console-output-examples)
@@ -14,6 +15,8 @@ This program is a Silly Simple Math Tutor designed for young children. Version 2
 - Evaluates the user's answer and provides appropriate feedback (congratulations for correct answers, or displaying the correct answer if incorrect).
 - Gracefully handles invalid mathematical operation types with specific error outputs.
 
+## Program Flowchart
+![Math Tutor V2 Flowchart](diagram.jpg)
 
 ## Maintainers
 [@MalachiByrd](https://github.com/MalachiByrd) Malachi Byrd  
