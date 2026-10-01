@@ -16,7 +16,7 @@ This program is a Silly Simple Math Tutor designed for young children. Version 2
 - Gracefully handles invalid mathematical operation types with specific error outputs.
 
 ## Program Flowchart
-![Math Tutor V2 Flowchart](diagram.jpg)
+![Math Tutor V2 Flowchart](diagram.ppg)
 
 ## Maintainers
 [@MalachiByrd](https://github.com/MalachiByrd) Malachi Byrd  
