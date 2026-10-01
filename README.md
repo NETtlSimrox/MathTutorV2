@@ -108,7 +108,7 @@ Math Fun Facts:
 What is your name? Siam
 Invalid question type: 5
 Program ended with an error -1
-Please report this error to Debbie Johnson.
+Please report this error to the system administrator.
 ```
 
 
